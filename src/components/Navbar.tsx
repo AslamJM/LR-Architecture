@@ -22,7 +22,7 @@ const Navbar = () => {
   const pathname = usePathname();
   const [show, setShow] = useState(false);
   return (
-    <div className="flex items-center justify-between py-4">
+    <div className=" flex items-center justify-between py-4 h-[80px] w-full  ">
       <Logo />
       <ul className="hidden md:flex items-center justify-center">
         {navlinks.map((item) => (
@@ -41,16 +41,22 @@ const Navbar = () => {
         ))}
       </ul>
       <ThemeToggle />
-      <button className="p-1 md:hidden rounded-full hover:bg-dark/10 dark:hover:bg-light/10 transition-all duration-300">
+      <button
+        className="p-1 md:hidden rounded-full hover:bg-dark/10 dark:hover:bg-light/10 transition-all duration-300"
+        data-drawer-target="drawer-navigation"
+        data-drawer-show="drawer-navigation"
+        type="button"
+      >
         <MenuIcon
           className="w-6 h-6  text-dark dark:text-light hover:text-primary dark:hover:text-primary"
           onClick={() => setShow(true)}
         />
       </button>
       <div
-        className={`absolute md:hidden w-[300px] h-full top-0 right-0 bg-primary opacity-95 z-10 ${
-          show ? "translate-x-[0px]" : "translate-x-[300px]"
-        } transition-all duration-500 `}
+        className={`fixed md:hidden w-[300px] h-full top-0 right-0 bg-primary opacity-95 z-20  transition-all duration-500 ${
+          show ? "translate-x-0" : "translate-x-full"
+        } `}
+        id="drawer-navigation"
       >
         <button
           className="absolute top-2 right-2 p-1 rounded-full hover:bg-dark/10 transition-colors duration-300"
