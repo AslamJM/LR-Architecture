@@ -9,10 +9,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#F9C558",
-        secondary: "#0B3538",
+        primary: "#F9C152",
+        secondary: "#0E333E",
         light: "#f1f1f1",
         dark: "#1b1b1b",
+      },
+      fontFamily: {
+        sans: ["var(--font-opt)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -21,5 +24,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };

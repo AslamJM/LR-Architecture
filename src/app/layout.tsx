@@ -1,9 +1,16 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import Navbar from "@/components/Navbar";
 import Providers from "@/components/Providers";
 
-const inter = Inter({ subsets: ["latin"] });
+const OPTIAmway = localFont({
+  src: [
+    {
+      path: "../../public/fonts/OPTIAmway.ttf.woff",
+    },
+  ],
+  variable: "--font-opt",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -16,10 +23,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.className} antialiased `}>
+    <html lang="en" className={`${OPTIAmway.variable} antialiased `}>
       <body>
         <Providers>
-          <div className="p-4 sm:px-8 md:px-16 text-dark bg-light dark:bg-dark dark:text-light h-[100vh] w-full ">
+          <div className="px-4 sm:px-8 md:px-16 xl:px-32 text-dark bg-light dark:bg-dark dark:text-light min-h-screen w-full ">
             <Navbar />
             {children}
           </div>

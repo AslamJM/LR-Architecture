@@ -7,12 +7,12 @@ interface AboutImageProps {}
 
 const AboutImage: FC<AboutImageProps> = ({}) => {
   return (
-    <div className="w-[300px] md:w-[400px] lg:w-[500px] h-[200px] md:h-[300px] lg:h-[500px] relative flex items-center justify-center">
+    <div className="aspect-w-16 aspect-h-9 lg:aspect-w-4 lg:aspect-h-3 md:aspect-h-4 md:aspect-w-3  bg-gray-200 rounded-lg overflow-hidden">
       <Image
         src="/images/about.jpeg"
         alt="about image"
         fill
-        className="object-contain"
+        className="object-cover"
       />
     </div>
   );

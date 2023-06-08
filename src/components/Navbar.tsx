@@ -74,6 +74,7 @@ const Navbar = () => {
                     ? "text-dark font-semibold"
                     : "text-secondary"
                 }  hover:text-dark text-lg`}
+                onClick={() => setShow(false)}
               >
                 {item.title}
               </Link>
