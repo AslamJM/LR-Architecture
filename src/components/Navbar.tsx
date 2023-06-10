@@ -21,6 +21,16 @@ const Logo = () => {
 const Navbar = () => {
   const pathname = usePathname();
   const [show, setShow] = useState(false);
+
+  const onPath = (slug: string) => {
+    if (pathname === "/" && slug === "/") {
+      return true;
+    }
+    if (slug !== "/") {
+      return pathname.startsWith(slug);
+    }
+  };
+
   return (
     <div className=" flex items-center justify-between py-4 h-[80px] w-full  ">
       <Logo />
@@ -30,10 +40,10 @@ const Navbar = () => {
             <Link
               href={item.slug}
               className={`${
-                pathname === item.slug
+                onPath(item.slug)
                   ? "text-primary font-semibold"
                   : "text-dark dark:text-light dark:hover:text-primary"
-              }  hover:text-primary`}
+              }  hover:text-primary tracking-widest font-light`}
             >
               {item.title}
             </Link>

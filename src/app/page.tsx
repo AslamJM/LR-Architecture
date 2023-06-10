@@ -5,11 +5,11 @@ import HomeImage from "@/components/home/HomeImage";
 export default function Home() {
   return (
     <div className="h-[calc(100vh-80px)] md:flex items-center relative ">
-      <div className="h-[60%]  flex items-center justify-center sm:h-full w-full md:w-1/2 absolute top-0 md:static ">
+      <div className="h-[70%]  flex items-center justify-center sm:h-full w-full md:w-1/2 absolute top-0 md:static z-10">
         <div>
           <LargeHeading>Building Your</LargeHeading>
           <LargeHeading>Dream Projects</LargeHeading>
-          <p className="my-4 font-light text-lg ">
+          <p className="my-4 font-light text-lg tracking-wide">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
             laudantium at accusantium laboriosam? Facere ullam repellat qui eum
             vel est rem dolorum explicabo accusamus perferendis.

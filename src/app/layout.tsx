@@ -1,5 +1,6 @@
 import "./globals.css";
 import localFont from "next/font/local";
+import { Open_Sans } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Providers from "@/components/Providers";
 
@@ -10,6 +11,10 @@ const OPTIAmway = localFont({
     },
   ],
   variable: "--font-opt",
+});
+
+const opensans = Open_Sans({
+  subsets: ["latin"],
 });
 
 export const metadata = {
@@ -23,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${OPTIAmway.variable} antialiased `}>
+    <html lang="en" className={`${opensans.className} antialiased `}>
       <body>
         <Providers>
           <div className="px-4 sm:px-8 md:px-16 xl:px-32 text-dark bg-light dark:bg-dark dark:text-light min-h-screen w-full ">

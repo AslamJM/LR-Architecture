@@ -11,8 +11,8 @@ module.exports = {
       colors: {
         primary: "#F9C152",
         secondary: "#0E333E",
-        light: "#f1f1f1",
-        dark: "#1b1b1b",
+        light: "#E6EAEB",
+        dark: "#06191E",
       },
       fontFamily: {
         sans: ["var(--font-opt)"],
