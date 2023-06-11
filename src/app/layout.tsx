@@ -1,8 +1,8 @@
 import "./globals.css";
 import localFont from "next/font/local";
-import { Open_Sans } from "next/font/google";
-import Navbar from "@/components/Navbar";
+import { Open_Sans, Montserrat } from "next/font/google";
 import Providers from "@/components/Providers";
+import LayoutProvider from "@/components/LayoutProvider";
 
 const OPTIAmway = localFont({
   src: [
@@ -13,7 +13,7 @@ const OPTIAmway = localFont({
   variable: "--font-opt",
 });
 
-const opensans = Open_Sans({
+const opensans = Montserrat({
   subsets: ["latin"],
 });
 
@@ -31,10 +31,7 @@ export default function RootLayout({
     <html lang="en" className={`${opensans.className} antialiased `}>
       <body>
         <Providers>
-          <div className="px-4 sm:px-8 md:px-16 xl:px-32 text-dark bg-light dark:bg-dark dark:text-light min-h-screen w-full ">
-            <Navbar />
-            {children}
-          </div>
+          <LayoutProvider>{children}</LayoutProvider>
         </Providers>
       </body>
     </html>

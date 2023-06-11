@@ -10,7 +10,6 @@ const navlinks = [
   { title: "Home", className: "mr-2 lg:mr-4", slug: "/" },
   { title: "About", className: "mx-2 lg:mx-4", slug: "/about" },
   { title: "Projects", className: "mx-2 lg:mx-4", slug: "/projects" },
-  { title: "Awards", className: "mx-2 lg:mx-4", slug: "/awards" },
   { title: "Contact", className: "ml-2 lg:ml-4", slug: "/contact" },
 ];
 
