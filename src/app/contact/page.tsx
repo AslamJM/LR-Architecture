@@ -28,7 +28,7 @@ const ContactPage = () => {
       <SectionTitle>Contact</SectionTitle>
       <div className="w-full md:flex  items-center justify-center">
         <div className="w-full md:w-1/2">
-          <p className="mt-2 mb-6 text-md md:text-base font-light">
+          <p className="mt-2 mb-6 text-md md:text-base ">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia nihil
             culpa illum? Nihil, natus omnis!
           </p>

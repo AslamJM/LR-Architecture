@@ -9,10 +9,13 @@ export default function Home() {
         <div>
           <LargeHeading>Building Your</LargeHeading>
           <LargeHeading>Dream Projects</LargeHeading>
-          <p className="my-4 font-light text-lg tracking-wide">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-            laudantium at accusantium laboriosam? Facere ullam repellat qui eum
-            vel est rem dolorum explicabo accusamus perferendis.
+          <p className="my-4  text-lg tracking-wide">
+            Transforming spaces with innovative design. Explore{" "}
+            <span className="text-dark dark:text-primary font-semibold">
+              LR Chartered Architects
+            </span>{" "}
+            for inspired architectural solutions that blend functionality and
+            aesthetics seamlessly.
           </p>
           <SocialIcons />
         </div>

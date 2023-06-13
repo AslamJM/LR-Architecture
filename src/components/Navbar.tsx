@@ -42,7 +42,7 @@ const Navbar = () => {
                 onPath(item.slug)
                   ? "text-primary font-semibold"
                   : "text-dark dark:text-light dark:hover:text-primary"
-              }  hover:text-primary tracking-widest font-light`}
+              }  hover:text-primary tracking-widest `}
             >
               {item.title}
             </Link>

@@ -15,7 +15,7 @@ module.exports = {
         dark: "#06191E",
       },
       fontFamily: {
-        sans: ["var(--font-opt)"],
+        sans: ["var(--font-mont)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

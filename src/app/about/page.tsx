@@ -9,7 +9,7 @@ const AboutPage = () => {
       <div className="flex flex-col-reverse md:flex-row xs:items-center items-center sm:space-x-4">
         <div className="w-full md:w-1/2 p-0 ">
           <div>
-            <p className="my-2  md:text-base text-sm lg:text-base text-slate-700 dark:text-slate-200 font-light px-2 sm:px-0 leading-6 tracking-wide text-justify">
+            <p className="my-2  md:text-base text-sm  text-dark dark:text-light  px-2 sm:px-0 leading-6 tracking-wide text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
               aut dolore eveniet, iusto voluptatibus vel reiciendis laudantium
               incidunt similique, necessitatibus quam voluptas tempore facilis
@@ -17,7 +17,7 @@ const AboutPage = () => {
               atque quaerat, fugit nobis laboriosam cupiditate voluptate
               repellendus iste, eum omnis. Cum.
             </p>
-            <p className="mt-4  md:text-base text-sm lg:text-base text-slate-700 dark:text-slate-200 font-light px-2 sm:px-0 leading-6 tracking-wide text-justify">
+            <p className="mt-4  md:text-base text-sm  text-dark dark:text-light px-2 sm:px-0 leading-6 tracking-wide text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
               aut dolore eveniet, iusto voluptatibus vel reiciendis laudantium
               incidunt similique, necessitatibus quam voluptas tempore facilis
