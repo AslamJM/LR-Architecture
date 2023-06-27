@@ -1,8 +1,8 @@
 import { FC } from "react";
 import { getSingleProject } from "@/lib/sanity";
 import SectionTitle from "@/components/projects/SectionTitle";
-import ProjectImages from "@/components/projects/ProjectImages";
-ProjectImages;
+import Carousel from "@/components/projects/Carousel";
+import ProjectPageLinks from "@/components/projects/ProjectPageLinks";
 
 interface pageProps {
   params: {
@@ -16,7 +16,17 @@ const page: FC<pageProps> = async ({ params }) => {
   return (
     <div className="min-h-screen">
       <SectionTitle>{projectData.name}</SectionTitle>
-      <ProjectImages src={projectData.images} alt={projectData.alts} />
+      <div className="grid grid-cols-1 md:grid-cols-7  gap-2 ">
+        <div className="col-span-2 flex items-center justify-center">
+          <p className="font-light text-sm md:text-md">
+            {projectData.description}
+          </p>
+        </div>
+        <div className="col-span-5 mt-5 md:mt-0">
+          <Carousel images={projectData.images} alt={projectData.alts} />
+        </div>
+      </div>
+      <ProjectPageLinks />
     </div>
   );
 };

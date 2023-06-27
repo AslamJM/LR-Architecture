@@ -40,7 +40,7 @@ const SocialIcons = () => {
         <Link
           href={link.href}
           key={link.name}
-          className={`${link.className} group p-2 hover:bg-[#fdf2dc] dark:hover:bg-secondary rounded-full z-[9]`}
+          className={`${link.className} group p-2 hover:bg-dark dark:hover:bg-secondary rounded-full z-[9]`}
         >
           <link.icon className="group-hover:text-primary" />
         </Link>

@@ -62,7 +62,7 @@ const Navbar = () => {
         />
       </button>
       <div
-        className={`fixed md:hidden w-[300px] h-full top-0 right-0 bg-primary opacity-95 z-20  transition-all duration-500 ${
+        className={`fixed md:hidden w-[300px] h-full top-0 right-0 bg-primary opacity-95 z-30  transition-all duration-500 ${
           show ? "translate-x-0" : "translate-x-full"
         } `}
         id="drawer-navigation"
