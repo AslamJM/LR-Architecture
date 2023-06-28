@@ -1,11 +1,17 @@
 import "./globals.css";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Titillium_Web } from "next/font/google";
 import Providers from "@/components/Providers";
 import LayoutProvider from "@/components/LayoutProvider";
 
 const opensans = Montserrat({
   subsets: ["latin"],
   variable: "--font-mont",
+});
+
+const titillium = Titillium_Web({
+  subsets: ["latin"],
+  variable: "--font-tit",
+  weight: ["400", "600", "700"],
 });
 
 export const metadata = {
@@ -20,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${opensans.className} antialiased `}>
+    <html lang="en" className={`${titillium.className} `}>
       <body>
         <Providers>
           <LayoutProvider>{children}</LayoutProvider>

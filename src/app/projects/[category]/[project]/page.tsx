@@ -16,13 +16,11 @@ const page: FC<pageProps> = async ({ params }) => {
   return (
     <div className="min-h-screen">
       <SectionTitle>{projectData.name}</SectionTitle>
-      <div className="grid grid-cols-1 md:grid-cols-7  gap-2 ">
-        <div className="col-span-2 flex items-center justify-center">
-          <p className="font-light text-sm md:text-md">
-            {projectData.description}
-          </p>
+      <div className="grid grid-cols-1 md:grid-cols-7 gap-4 md:gap-0 ">
+        <div className=" col-span-1 md:col-span-2 flex items-center justify-center">
+          <p className=" text-sm md:text-md">{projectData.description}</p>
         </div>
-        <div className="col-span-5 mt-5 md:mt-0">
+        <div className=" col-span-1 md:col-span-5 mt-5 md:mt-0">
           <Carousel images={projectData.images} alt={projectData.alts} />
         </div>
       </div>

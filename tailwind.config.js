@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from "tailwindcss/defaultTheme";
+
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -8,6 +10,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "450px",
+        ...defaultTheme.screens,
+      },
       colors: {
         primary: "#F9C152",
         secondary: "#0E333E",
@@ -16,6 +22,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-mont)"],
+        tit: ["var(--font-tit)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
