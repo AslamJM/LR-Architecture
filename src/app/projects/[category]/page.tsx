@@ -17,7 +17,7 @@ const page: FC<pageProps> = async ({ params }) => {
   return (
     <div>
       <SectionTitle>{name.name}</SectionTitle>
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-x-6 gap-y-10">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-x-6 gap-y-12 mt-2 sm:mt-4">
         {projects.map((project) => (
           <ProjectCard
             key={project._id}

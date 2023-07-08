@@ -6,6 +6,11 @@ import { usePathname } from "next/navigation";
 import ThemeToggle from "./ui/Switch";
 import { MenuIcon, XIcon } from "lucide-react";
 
+
+import {Roboto_Slab} from 'next/font/google'
+
+const League_Gothic_F = Roboto_Slab({subsets:['latin']}) 
+
 const navlinks = [
   { title: "Home", className: "mr-2 lg:mr-4", slug: "/" },
   { title: "About", className: "mx-2 lg:mx-4", slug: "/about" },
@@ -14,7 +19,12 @@ const navlinks = [
 ];
 
 const Logo = () => {
-  return <h1 className="text-secondary text-2xl font-bold italic">L&R</h1>;
+  return <div>
+    <Link href="/">
+      <h2 className={`${League_Gothic_F.className} text-2xl font-bold tracking-`}>LUTHFUR RAHMAN</h2>
+      <h5 className={`${League_Gothic_F.className} text-md font-base tracking-[.27em]`}>Chartered Architects.</h5>
+    </Link>
+  </div>
 };
 
 const Navbar = () => {
@@ -33,6 +43,7 @@ const Navbar = () => {
   return (
     <div className=" flex items-center justify-between py-4 h-[80px] w-full  ">
       <Logo />
+      <div className="flex item-center">
       <ul className="hidden md:flex items-center justify-center">
         {navlinks.map((item) => (
           <li key={item.title} className={`${item.className} px-1 py-2`}>
@@ -49,7 +60,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <ThemeToggle />
+      </div>
       <button
         className="p-1 md:hidden rounded-full hover:bg-dark/10 dark:hover:bg-light/10 transition-all duration-300"
         data-drawer-target="drawer-navigation"

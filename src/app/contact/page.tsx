@@ -7,17 +7,17 @@ import ContactCard from "@/components/contact/ContactCard";
 const contactDetails = [
   {
     title: "Address",
-    content: "233,abfgFg road,Ervaur-021",
+    content: "NO. 231, KATTUPALLI ROAD, ERAVUR 03, BATTICALOA, SRI LANKA",
     Icon: Home,
   },
   {
     title: "Phone",
-    content: "+94238384939",
+    content: "0094-77 34 60 707 ",
     Icon: Phone,
   },
   {
     title: "E-Mail",
-    content: "macak@fil.com.uk",
+    content: "archt.luthfurrahman@gmail.com",
     Icon: Mail,
   },
 ];
@@ -29,8 +29,7 @@ const ContactPage = () => {
       <div className="w-full md:flex  items-center justify-center">
         <div className="w-full md:w-1/2">
           <p className="mt-2 mb-6 text-md md:text-base ">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia nihil
-            culpa illum? Nihil, natus omnis!
+          Contact Us for Consultations, Collaborations, and Inquiries
           </p>
           {contactDetails.map((detail) => (
             <ContactCard
